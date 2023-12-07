@@ -1,0 +1,10 @@
+credentials:
+  usernames:
+    user1:
+      email: user1@gmail.com
+      name: Max Mustermann
+      password: $2b$12$iHjCVkSC.F6s71i6pJJJIem/Ix3u6YPshmzc4bD6vN382nHgG/QVe 
+cookie:
+  expiry_days: 30
+  key: MV_bhnkfd2v6EZK-1QkLu-Ac6gvCzRXf6mVbE22-c6o 
+  name: some_cookie_name
