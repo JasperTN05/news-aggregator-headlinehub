@@ -42,9 +42,9 @@ with open('clickbait_model.pkl', 'rb') as file:
 
 # --- Load Data ---
 # all articles
-df = pd.read_csv("C:/Users/Jacob/Desktop/Iron Hack/Course/projects/week 9/ironhack-final-project/web app/datasets/all_articles.csv")
+df = pd.read_csv("./ironhack-final-project/web app/datasets/all_articles.csv")
 # suggestions
-ranked_df = pd.read_csv("C:/Users/Jacob/Desktop/Iron Hack/Course/projects/week 9/ironhack-final-project/web app/datasets/ranked_df.csv")
+ranked_df = pd.read_csv("./ironhack-final-project/web app/datasets/ranked_df.csv")
 # profiles
 in_depth_explorer = pd.read_csv("./data/In-DepthExplorer.csv")
 quick_briefing = pd.read_csv("./data/QuickBriefing.csv")
