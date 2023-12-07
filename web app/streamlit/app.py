@@ -24,6 +24,9 @@ import re
 from documentation import show_documentation
 import ast
 
+# --- PAGE CONFIG ---
+st.set_page_config(page_title="Headline HUB",
+                    page_icon=":newspaper:")
 
 # --- Load Models ---
 with open('bow_vect.pkl', 'rb') as file:
@@ -59,7 +62,7 @@ climate = pd.read_csv("./data/climate_df.csv")
 health_tech = pd.read_csv("./data/health_tech_df.csv")
 justice = pd.read_csv("./data/justice_df.csv")
 buisness = pd.read_csv("./data/buisness_df.csv")
-cookies = pd.read_csv("user_cookies.csv")
+cookies = pd.read_csv("./data/user_cookies.csv")
 
 # --- Functions ---
 def display_articles(df, c):
@@ -321,7 +324,7 @@ if authentication_status==True:
             cookies["categories"] = [categories_user]
             cookies["sources"] = [sources_user]
             cookies["profile"] = selected_profile
-            cookies.to_csv("user_cookies.csv", index=False)
+            cookies.to_csv("./data/user_cookies.csv", index=False)
 
     if selected_page =="Articles":
         selected = option_menu(
