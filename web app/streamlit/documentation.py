@@ -11,7 +11,7 @@ def show_documentation():
     col1.write("**Sentiment:** The Sentiment Score (-1 to 1) is calculated with NLTK SentimentIntensityAnalyzer. This Score is then grouped into Positive(0.35<x<1), Neutral(-0.35<x<0.35) and Negative(-1<x<-0.35)")
     col1.write("**Readability:** The Readability is calculated with the Coleman Liau Index. It approximates the US Grade level thought necessary to comprehend the text.")
     col1.write("**Bias Score:** This metric is calculated with the TextBlob sentiment.subjectivity Tool. The value is then squared to disregard positive or negative sentiment and only focus on general bias.")
-    col1.write("**Sensationalism Score:** This Score looks for a words for such as superlatives and other ones that are associated with sensationalism. The number of occurences of those words is then normalized with the Text lenth.")
+    col1.write("**Sensationalism Score:** This Score looks for words such as superlatives and other ones that are associated with sensationalism. The number of occurences of those words is then normalized with the Text lenth.")
     col1.write("**Clickbait Probability:** To predict wheter an Article is likely to be clickbait a LogisticRegression model with 97% accuracy is applied to title to look for features often associated with clickbait (e.g uppercased, exclamation marks etc.)")
     image = Image.open("./pictures/newspaper.png")
     col2.image(image, use_column_width=True)

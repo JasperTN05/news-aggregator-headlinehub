@@ -55,6 +55,7 @@ critical_thinker = pd.read_csv("./data/CriticalThinker.csv")
 
 #categories
 politics = pd.read_csv("./data/politics_df.csv")
+politics = politics[:500]
 entertainment = pd.read_csv("./data/entertainment_df.csv")
 international = pd.read_csv("./data/international_df.csv")
 sports = pd.read_csv("./data/sports_df.csv")
@@ -245,7 +246,7 @@ def sum_stats_2(title, text):
         click = "No"
     else:
         click = "Yes"
-    st.write(f"**Category:** {category[0]} | **Text length:** {length} | **Sentiment:** {sentiment} | **Sensationalism:** {round(sensationalism_score,2)} | **Readability:** {round(readability,2)} | **Bias:** {round(bias,3)} | **Clickbait:** {click}")
+    st.write(f"**Category:** {category[0]} | **Text length:** {length} | **Sentiment:** {sentiment} | **Sensationalism:** {round(sensationalism_score,2)} | **Readability:** {round(readability,2)} | **Bias:** {bias} | **Clickbait:** {click}")
 
 
 # --- USER AUTHENTICATION ---
@@ -572,6 +573,7 @@ if authentication_status==True:
             tableau_embed_code = """
                 <iframe src="https://public.tableau.com/views/HeadlineHub/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link:showVizHome=no&:embed=true" width="1366" height="768"></iframe>
             """
+            
             tab9, tab10, tab11 = st.tabs(["Explorer", "Dashboard", "WordFreq"])
             with tab9:
                 choice = option_menu(
