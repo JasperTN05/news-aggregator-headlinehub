@@ -20,7 +20,7 @@ This is a News Aggregator, a web application designed to provide users with pers
 
 ### Installation
 - fork and clone this repo
-- web app: -streamlit run app.py in the command line after going to the streamlit directory to start the web app
+- web app: "-streamlit run app.py" in the command line after going to the streamlit directory to start the web app
 - login: the first user login can made with username: user1 , password: abc
 - accounts: more users can be added in the config.yaml file, remember to add the passwords as hashed passwords. This can be done with the generate_keys.py file
 - updating: run the update_articles.ipynb and table_tuning.ipynb (sequentially) to get the newest articles directly into your web app (this can take up to 15 minutes)
