@@ -16,7 +16,7 @@ This is a News Aggregator, a web application designed to provide users with pers
 ### Prerequisites
 
 - Python (>=3.9)
-- Required Python packages (```install with `pip install -r requirements.txt```)
+- Required Python packages (install with ```pip install -r requirements.txt```)
 
 ### Installation
 - install this repo
